@@ -10,7 +10,7 @@ namespace BMICalculator
     /// <summary>
     /// 計算健康分數interface
     /// </summary>
-    public interface IHealthScoreCalculator
+    public interface IHealthScoreCalculator : IHealthSystem
     {
         double CalculateHealthScore();
     }

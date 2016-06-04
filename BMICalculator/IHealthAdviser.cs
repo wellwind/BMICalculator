@@ -9,7 +9,7 @@ namespace BMICalculator
     /// <summary>
     /// 提供健康診斷interface
     /// </summary>
-    public interface IHealthAdviser
+    public interface IHealthAdviser : IHealthSystem
     {
         Enum GetHealthAdvise();
     }

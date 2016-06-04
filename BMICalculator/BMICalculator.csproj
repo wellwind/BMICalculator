@@ -52,6 +52,7 @@
     <Compile Include="Human.cs" />
     <Compile Include="IHealthAdviser.cs" />
     <Compile Include="IHealthScoreCalculator.cs" />
+    <Compile Include="IHealthSystem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
