@@ -10,11 +10,11 @@ namespace BMICalculator
 {
     public class BMICalculator : IHealthScoreCalculator, IHealthAdviser
     {
-        public Human People { get; set; }
+        public Human Person { get; set; }
 
         public double CalculateHealthScore()
         {
-            return People.Weight / Math.Pow(People.Height / 100, 2);
+            return Person.Weight / Math.Pow(Person.Height / 100, 2);
         }
 
         public Enum GetHealthAdvise()
@@ -26,11 +26,11 @@ namespace BMICalculator
 
         private IBMIAdviseCalculator getBMIAdviseCalculator()
         {
-            if (People.Gender == GenderEnum.Male)
+            if (Person.Gender == GenderEnum.Male)
             {
                 return new MaleBMIAdviseCalculator();
             }
-            else if (People.Gender == GenderEnum.Female)
+            else if (Person.Gender == GenderEnum.Female)
             {
                 return new FemaleBMIAdviseCalculator();
             }

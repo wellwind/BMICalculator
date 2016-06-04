@@ -44,16 +44,16 @@ namespace BMICalculator
             };
 
             var bmiCalculator = new BMICalculator();
-            bmiCalculator.People = people;
+            bmiCalculator.Person = people;
 
             showResult(bmiCalculator);
         }
 
         private static void showResult(BMICalculator bmiCalculator)
         {
-            Console.WriteLine($"身高：{bmiCalculator.People.Height}");
-            Console.WriteLine($"體重：{bmiCalculator.People.Weight}");
-            Console.WriteLine($"性別：{bmiCalculator.People.Gender}");
+            Console.WriteLine($"身高：{bmiCalculator.Person.Height}");
+            Console.WriteLine($"體重：{bmiCalculator.Person.Weight}");
+            Console.WriteLine($"性別：{bmiCalculator.Person.Gender}");
             Console.WriteLine($"BMI：{bmiCalculator.CalculateHealthScore().ToString("0.00")}");
             Console.WriteLine($"診斷結果：{bmiCalculator.GetHealthAdvise()}");
             Console.WriteLine("===================");
